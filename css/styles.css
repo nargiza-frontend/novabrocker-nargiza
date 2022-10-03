@@ -1,11 +1,68 @@
 /* CUSTOM-PROPS */
 :root {
-
+  --accent-color: #EB242A;
+  --bg-color: #E5E5E5;
+  --text-color: #57606A;
+  --title-color: #272D4E;
+  --accent-title-color: #001A49;
+  --accent-text-color: #fff;
 }
 
-/* FONT-FACE  */
+/* FONT-FAMILY  */
 
+@font-face {
+  font-family: "Mulish";
+  src: url("Mulish-Medium.woff2") format("woff2"),
+  url("Mulish-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Mulish";
+  src: url("Mulish-Bold.woff2") format("woff2"),
+  url("Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("Mulish-Regular.woff2") format("woff2"),
+  url("Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Bold.woff2") format("woff2"),
+  url("Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.woff2") format("woff2"),
+  url("Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Medium.woff2") format("woff2"),
+  url("Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 /* GLOBAL-STYLES  */
 html {
   box-sizing: border-box;
@@ -46,12 +103,25 @@ img {
 
 /* CONTAINER  */
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   width: 100%;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.title {
+  margin: 0;
+  color: var(--title-color)
+}
+.text {
+  margin: 0;
+  color: var(--text-color);
+}
+.btn {
+  display: block;
 }
 
 
@@ -67,6 +137,73 @@ img {
   overflow: hidden;
 }
 
+.site-header {
+  background-image: url(../img/hero-img.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1000px;
+  background-color: var(--bg-color);
+  margin-bottom: 126px;
+
+}
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 95px 0;
+  margin-bottom: 63px;
+}
+.site-header-logo {
+  display: block;
+}
+.site-header-btn {
+  padding: 15px 30px;
+  border: 1px solid var(--accent-color);
+  border-radius: 33px;
+}
+.hero {
+  margin-bottom: 190px;
+}
+.about-hero {
+}
+.hero-inner {
+}
+.hero-title {
+  margin-bottom: 36px;
+  font-family: "Roboto";
+  font-size: 90px;
+  line-height: 109px;
+  font-weight: 700;
+}
+.hero-text {
+  max-width: 551px;
+  margin-bottom: 118px;
+}
+.cta {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  color:  #94A2B3;
+}
+.cta-btn {
+  background-color:var(--accent-color);
+  padding: 21px 68px;
+  border-radius: 60px;
+  color: var(--accent-text-color);
+  border: transparent;
+  font-size: 27px;
+  line-height: normal;
+  font-weight: 700;
+  margin-right: 31px;
+}
+.cta-link {
+  color: #299EF3;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
 
 /* MAIN-CONTENT  */
 .main-content {
